@@ -1,0 +1,61 @@
+<!DOCTYPE>
+	<html>
+		<meta=UTF-8>	
+		<title>SISTEM KOPERASI ADTEC MELAKA</title>
+<body background="latar belakang.jpeg">
+	<img src="jtm.jpg" height="200" width="200" />
+		<from action="#" method="GET">
+			<strong><font size="6">SELAMAT DATANG KE SISTEM KOPERASI ADTEC MELAKA</font>
+				<form action="login.php" method="POST" align="left">
+<fieldset>
+	<legend>Login</legend>
+<p>
+	<textbox>Username:</textbox>
+		<input type="text" name="username" placeholder="Username" />
+</p>
+<p>
+	<textbox>Password:</textbox>
+		<input type="password" value="" id="mypass" placeholder="Password"><br>
+</p>
+<p>
+	<label><input type="checkbox" name="remember" value="remember" /> Remember me</label>
+	
+</p>
+<p>
+	<input style="width: 128px" type="submit" name="submit" value="Login" />
+</p>
+<p>
+ 	<input style="width: 128px" type=button style id="show" value="Show Password" onclick="ShowPassword()">
+    	<input type=button style="display:none" id="hide" value="Hide Password" onclick="HidePassword()">
+</p>
+<head>
+	 <script>
+    	function ShowPassword()
+    {
+        if(document.getElementById("mypass").value!="")
+        {
+            document.getElementById("mypass").type="text";
+            	document.getElementById("show").style.display="none";
+           			 document.getElementById("hide").style.display="block";
+        }
+    }
+
+   		function HidePassword()
+    {
+        if(document.getElementById("mypass").type == "text")
+        {
+            document.getElementById("mypass").type="password"
+            	document.getElementById("show").style.display="block";
+           			 document.getElementById("hide").style.display="none";
+        }
+    }
+
+	</script>
+</head>
+</fieldset>
+</body>
+</html>
+
+
+
+
